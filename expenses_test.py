@@ -104,19 +104,7 @@ class Expenses_Test(unittest.TestCase):
         self.assertListEqual(amount_sorted_expenses, sort_expenses(self.expenses, "amount"))
 
     def test_export_expenses(self):
-        #  Note: Unless you add assert() statements or there is an exception, this test will pass regardless of the
-        #  correctness of your export_expenses() function, so passing this test is not a guarantee of correctness.
-
-        # test export with existing expense types.
-        # this will create a new file called “export1.txt” that you should visually inspect for correctness
         export_expenses(self.expenses, ['coffee', 'clothes'], 'export1.txt')
-
-        # TODO insert 1 additional test case
-        #   Hint: Test exporting with some non-existent expense types.
-        #   Similar to above, it is acceptable to just call export_expenses() using different inputs with a different
-        #   file to write to and just visually inspect the results. You are not required to have any assert() statements
-        #   in this test function.
-
         export_expenses(self.expenses, ['coffee', 'home'], 'export2.txt')
 
 if __name__ == '__main__':
