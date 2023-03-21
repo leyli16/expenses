@@ -1,22 +1,10 @@
-# Student Name in Canvas: Le Li
-# Penn ID: 40053122
-# Did you do this homework on your own (yes / no): Yes
-# Resources used outside course materials: TA Recitation
-
 """
-This Python exam will involve implementing a system for managing expenses.  You will
-download the skeleton of the program, then implement the functions.  The design of the
-program has been set up for you.
+This Python will involve implementing a system for managing expenses. 
 
 In this system, users will be able to add and deduct expenses, update expenses, sort expenses,
 and export filtered expenses to a file.  The program will initially load a collection of expenses
 from 2 different .txt files (in the same format) and store them in a dictionary.
 
-NOTE(S):
-- It is important that you DO NOT edit the expenses.txt file or the expenses_2.txt file.  If you do,
-you could fail the automated testing.
-- DO NOT change the spacing or remove any blank lines.
-- DO NOT copy/paste the text from the expenses.txt file or the expenses_2.txt file into another file.
 """
 
 
@@ -53,7 +41,7 @@ def import_expenses(expenses, file):
     Ignores expenses with missing amounts. If a line contains both an expense type and an expense amount,
     they will be separated by a colon (:).
 
-    You can assume that if they exist, expense types are one-word strings and the amounts are numerical.
+    If they exist, expense types are one-word strings and the amounts are numerical.
 
     Strip any whitespace before or after the expense types and amounts.
 
@@ -105,10 +93,7 @@ def import_expenses(expenses, file):
 def get_expense(expenses, expense_type):
     """Prints and returns the value for the given expense type in the given expenses dictionary.
 
-    Prints a friendly message and returns None if the expense type doesn't exist. (Note: Printing a friendly message
-    means that the program should not raise an error or otherwise terminate. Simply tell the user that the requested
-    expense type does not exist and continue the program. Also note that None is a specific keyword in Python of
-    NoneType. You should not return a string “None” from this function.)
+    Prints a friendly message and returns None if the expense type doesn't exist. 
     """
 
     # if there is no such expense type
